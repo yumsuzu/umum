@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        let data = [{
+            img:'anpn.jpg',
+            des:'じゃむおじさんがアンパン子をおぶってパンこねる。'
+            },
+            {
+                img:'anpn2.jpg',
+                des:'じゃむおじさんがアンパンマンの頭をぶんどる。'
+            },
+            {
+                img:'anpn3.jpg',
+                des:'あんぱんまん、きゅるりんしてみて。'
+            }
+        ]
+
+        data.forEach(uu=>{
+        let img = document.createElement('img');
+        img.src = uu.img;
+        let p = document.createElement('p');
+        p.textContent = uu.des;
+        document.body.append(img,p);
+        let div =document.releaseEvents('div');
+        });
+    </script>
+    
+</body>
+</html>
